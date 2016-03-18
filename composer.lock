@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "44346c42a6b91133d2eeea85010c0ae8",
-    "content-hash": "b4ce4f6a33cd66e59b4a5e7ca954ff62",
+    "hash": "5afbeb5fe63200528fc78d89280cdfbe",
+    "content-hash": "521ce3d623715c35bac8fa642ca8078a",
     "packages": [
         {
             "name": "tan-tan-kanarek/github-php-client",
@@ -41,6 +41,8 @@
     "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
-    "platform": [],
+    "platform": {
+        "ext-curl": "*"
+    },
     "platform-dev": []
 }

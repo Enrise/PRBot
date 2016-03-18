@@ -2,7 +2,8 @@
     "name": "enrise/prbot",
     "description": "Automated pull requests for forgotten merge-backs",
     "require": {
-        "tan-tan-kanarek/github-php-client": "^1.0"
+        "tan-tan-kanarek/github-php-client": "^1.0",
+        "ext-curl": "*"
     },
     "authors": [
         {

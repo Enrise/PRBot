@@ -26,13 +26,14 @@ Copy the `dev/config.dist.php` to `dev/config.php`, and edit the file to configu
 return [
     'username' => 'myMergeBot', // Your github username
     'password' => 'somepass123', // Your github password
-    // The title that will be used for your PR's, %s being the branch names:
+    // The title that will be used for your PRs, the first %s being the
+    // branch to merge from, the second %s being the to branch to merge to.
     'prTitle' => 'Make sure that %s is in %s!',
     // Message the PRBot uses for the pull request:
     'prBody' => '![](https://heavyeditorial.files.wordpress.com/2012/08/thumbsup.gif)',
     'github' => [
-        // http://github.com/UserOrOrganisation/ProjectA
-        'UserOrOrganisation' => [
+        // http://github.com/SomeUserOrOrganisation/ProjectA
+        'SomeUserOrOrganisation' => [
             'ProjectA' => [
                 // Merges back release/1.1 into release/1.2
                 'release/1.1' => 'release/1.2',
@@ -40,8 +41,8 @@ return [
                 'release/1.2' => 'develop',
             ],
         ],
-        // http://github.com/UserOrOrganisation/ProjectB
-        'UserOrOrganisation' => [
+        // http://github.com/AnotherUserOrOrganisation/ProjectB
+        'AnotherUserOrOrganisation' => [
             'ProjectB' => [
                 // Merges back release/2.0 into develop
                 'release/2.0' => 'develop',
