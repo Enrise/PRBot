@@ -1,0 +1,46 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "44346c42a6b91133d2eeea85010c0ae8",
+    "content-hash": "b4ce4f6a33cd66e59b4a5e7ca954ff62",
+    "packages": [
+        {
+            "name": "tan-tan-kanarek/github-php-client",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tan-tan-kanarek/github-php-client.git",
+                "reference": "9103c68507b7eba0a51b13dc499838e2cf83cdfb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tan-tan-kanarek/github-php-client/zipball/9103c68507b7eba0a51b13dc499838e2cf83cdfb",
+                "reference": "9103c68507b7eba0a51b13dc499838e2cf83cdfb",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "client/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "proprietary"
+            ],
+            "description": "PHP client for the Github API",
+            "time": "2015-11-16 08:36:41"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

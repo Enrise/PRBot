@@ -1,0 +1,17 @@
+{
+    "name": "enrise/prbot",
+    "description": "A github bot that checks if the develop branch needs updating with an older version",
+    "require": {
+        "tan-tan-kanarek/github-php-client": "^1.0"
+    },
+    "authors": [
+        {
+            "name": "Rick van der Staaij",
+            "email": "rick@enrise.com"
+        },
+        {
+            "name": "Stefan van Essen",
+            "email": "git@stefan-van-essen.nl"
+        }
+    ]
+}
