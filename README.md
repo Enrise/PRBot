@@ -53,7 +53,9 @@ return [
 ];
 ```
 
-We recommend that you configure your cronjob to run every morning before you get to work. For example at 5am.
+We recommend that you configure your cronjob to run every morning before you get to work. For example at 5am from monday to friday:
+
+![0 5 * * 1-5](https://cloud.githubusercontent.com/assets/6495166/13875109/2efe13a8-ecfc-11e5-87ce-5c3214903073.png)
 
 # Example
 
