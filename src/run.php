@@ -24,13 +24,13 @@ foreach ($config['github'] as $fork => $projects) {
                     $fork,
                     $project,
                     sprintf(
-                        'Auto merging %s back into %s',
+                        $config['prTitle'],
                         $fromBranch,
                         $toBranch
                     ),
                     $fromBranch,
                     $toBranch,
-                    '![](http://i.imgur.com/HRQ0Bwl.png)'
+                    $config['prBody']
                 );
             } catch (\Exception $e) {
                 // Ignore status 422 messages, this means there is no need to create a PR, which is fine.
