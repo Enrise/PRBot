@@ -1,6 +1,6 @@
 {
     "name": "enrise/prbot",
-    "description": Automated pull requests for forgotten merge-backs",
+    "description": "Automated pull requests for forgotten merge-backs",
     "require": {
         "tan-tan-kanarek/github-php-client": "^1.0"
     },
