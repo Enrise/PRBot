@@ -1,13 +1,13 @@
 {
     "name": "enrise/prbot",
-    "description": "A github bot that checks if the develop branch needs updating with an older version",
+    "description": Automated pull requests for forgotten merge-backs",
     "require": {
         "tan-tan-kanarek/github-php-client": "^1.0"
     },
     "authors": [
         {
             "name": "Rick van der Staaij",
-            "email": "rick@enrise.com"
+            "homepage": "http://rickvanderstaaij.nl"
         },
         {
             "name": "Stefan van Essen",
