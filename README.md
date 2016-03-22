@@ -13,6 +13,7 @@ In order to run the PRBot, you need to have the following available:
 * A server with a CRON-job
 * PHP 5.4 or higher
 * Have the PHP CURL module enabled
+* A Github account with READ access to the repositories you want to monitor
 
 Once you downloaded all the files, make sure you run `composer install` with [composer](https://getcomposer.org/).
 
