@@ -3,7 +3,7 @@
 ### What
 
 The PRBot was created to automatically create a new pull request, when a merge-back was forgotten.
-For exmaple; if a hotfix was made for version 1.1, it should also be merged back to your development branch.
+For example; if a hotfix was made for version 1.1, it should also be merged back to your development branch.
 The PRBot should run every morning, to remind you what's still in need of a merge-back.
 
 ### Requirements
