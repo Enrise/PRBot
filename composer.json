@@ -3,7 +3,11 @@
     "description": "Automated pull requests for forgotten merge-backs",
     "require": {
         "tan-tan-kanarek/github-php-client": "^1.0",
+        "symfony/yaml": "^3.1",
         "ext-curl": "*"
+    },
+    "autoload": {
+        "psr-4": {"PRBot\\": "src/PRBot"}
     },
     "authors": [
         {
