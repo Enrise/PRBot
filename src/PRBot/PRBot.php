@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 namespace PRBot;
 
@@ -61,10 +62,10 @@ class PRBot
     /**
      * Create a PullRequest on GitHub.
      *
-     * @param string       $fromBranch  The branch that holds the changes we want to merge.
-     * @param string       $toBranch    The branch we want to merge the changes into.
-     * @param string       $prTitle     The title of the PR.
-     * @param string       $prBody      The body of the PR, can contain markdown.
+     * @param string $fromBranch The branch that holds the changes we want to merge.
+     * @param string $toBranch   The branch we want to merge the changes into.
+     * @param string $prTitle    The title of the PR.
+     * @param string $prBody     The body of the PR, can contain markdown.
      *
      * @throws \GitHubClientException
      *
@@ -75,7 +76,7 @@ class PRBot
         string $toBranch,
         string $prTitle,
         string $prBody
-    ) {
+    ): \GitHubFullPull {
         $pullRequest = $this->gitHubClient->pulls->createPullRequest(
             $this->fork,
             $this->projectName,
@@ -95,8 +96,8 @@ class PRBot
     /**
      * Assign a create PR to one or more assignees.
      *
-     * @param int          $prNumber    The ID of the PR that we want to assign.
-     * @param array        $assignees   An array of GitHub usernames that this PR will be assigned to.
+     * @param int   $prNumber  The ID of the PR that we want to assign.
+     * @param array $assignees An array of GitHub usernames that this PR will be assigned to.
      *
      * @throws \GitHubClientException
      */

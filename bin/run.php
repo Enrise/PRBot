@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 use PRBot\PRBot;
 use Symfony\Component\Yaml\Yaml;

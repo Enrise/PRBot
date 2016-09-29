@@ -2,9 +2,10 @@
     "name": "enrise/prbot",
     "description": "Automated pull requests for forgotten merge-backs",
     "require": {
+        "php": "^7.0",
+        "ext-curl": "*",
         "tan-tan-kanarek/github-php-client": "^1.0",
-        "symfony/yaml": "^3.1",
-        "ext-curl": "*"
+        "symfony/yaml": "^3.1"
     },
     "autoload": {
         "psr-4": {"PRBot\\": "src/PRBot"}
