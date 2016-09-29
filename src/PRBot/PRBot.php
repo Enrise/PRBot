@@ -1,5 +1,4 @@
 <?php
-declare(strict_types=1);
 
 namespace PRBot;
 
@@ -44,7 +43,7 @@ class PRBot
      *
      * @param string $fork The fork of the project.
      */
-    public function setFork(string $fork)
+    public function setFork($fork)
     {
         $this->fork = $fork;
     }
@@ -54,7 +53,7 @@ class PRBot
      *
      * @param string $projectName The name of the project.
      */
-    public function setProjectName(string $projectName)
+    public function setProjectName($projectName)
     {
         $this->projectName = $projectName;
     }
@@ -72,11 +71,11 @@ class PRBot
      * @return \GitHubFullPull
      */
     public function createPR(
-        string $fromBranch,
-        string $toBranch,
-        string $prTitle,
-        string $prBody
-    ): \GitHubFullPull {
+        $fromBranch,
+        $toBranch,
+        $prTitle,
+        $prBody
+    ) {
         $pullRequest = $this->gitHubClient->pulls->createPullRequest(
             $this->fork,
             $this->projectName,
@@ -102,7 +101,7 @@ class PRBot
      * @throws \GitHubClientException
      */
     public function assignPR(
-        int $prNumber,
+        $prNumber,
         array $assignees
     ) {
         $data = [

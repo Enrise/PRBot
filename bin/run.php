@@ -1,12 +1,16 @@
 <?php
-declare(strict_types=1);
 
 use PRBot\PRBot;
 use Symfony\Component\Yaml\Yaml;
 
 require __DIR__ . '/../vendor/autoload.php';
 
-$config = file_get_contents(__DIR__ . '/../etc/config.yml');
+$configFile = __DIR__ . '/../etc/config.yml';
+if (!file_exists($configFile)) {
+    echo 'Please create etc/config.yml and retry.' . PHP_EOL;
+    exit(1);
+}
+$config = file_get_contents($configFile);
 $config = Yaml::parse($config);
 
 $client = new \GitHubClient();

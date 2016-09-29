@@ -11,7 +11,7 @@ The PRBot should run every morning, to remind you what's still in need of a merg
 In order to run the PRBot, you need to have the following available:
 
 * A server with a CRON-job.
-* PHP 7.0 or higher with the CURL module enabled.
+* PHP 5.4 or higher with the CURL module enabled.
 * A GitHub account with READ access to the repositories you want to monitor. WRITE access is required to assign the PRs.
 
 ## Installation
