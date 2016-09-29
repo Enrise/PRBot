@@ -1,0 +1,17 @@
+username: user
+password: pass
+
+projects:
+  ProjectA:
+    fork: MyFork
+    prTitle: "[Automated] Merging %s back into %s"
+    prBody: "![](http://i.imgur.com/HRQ0Bwl.png)"
+    merges:
+      release/1.0: release/1.10
+      release/1.10: release/1.11
+      release/1.11: develop
+    assignees:
+      - UserA
+      - UserB
+      - UserC
+
