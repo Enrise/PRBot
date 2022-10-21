@@ -1,10 +1,9 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "hash": "5afbeb5fe63200528fc78d89280cdfbe",
     "content-hash": "521ce3d623715c35bac8fa642ca8078a",
     "packages": [
         {
@@ -32,7 +31,11 @@
                 "proprietary"
             ],
             "description": "PHP client for the Github API",
-            "time": "2015-11-16 08:36:41"
+            "support": {
+                "issues": "https://github.com/tan-tan-kanarek/github-php-client/issues",
+                "source": "https://github.com/tan-tan-kanarek/github-php-client/tree/master"
+            },
+            "time": "2015-11-16T08:36:41+00:00"
         }
     ],
     "packages-dev": [],
@@ -44,5 +47,6 @@
     "platform": {
         "ext-curl": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "2.2.0"
 }
